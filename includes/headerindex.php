@@ -14,13 +14,5 @@
 
     <body>
        
-    <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo"></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="cliente.php">Clientes</a></li>
-        <li><a href="usuario.php">Usuários</a></li>
-        <li><a href="logout.php">Sair</a></li>
-      </ul>
-    </div>
-  </nav>
+   
+   

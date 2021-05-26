@@ -19,18 +19,9 @@ $dados = mysqli_fetch_array($resultado);
 mysqli_close($connect);
 ?>
 
-    
-    <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Olá <?php echo $dados['nome']; ?></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="cliente.php">Clientes</a></li>
-        <li><a href="usuario.php">Usuários</a></li>
-        <li><a href="logout.php">Sair</a></li>
-      </ul>
-    </div>
-  </nav>
+ 
 
+<div><h1>Olá, <?php echo $dados['nome']; ?></h1></div>
   <div class="divider"></div>
   <div class="section">
     <h5>Desenvolvimentos de sistemas</h5>

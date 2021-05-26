@@ -1,6 +1,6 @@
 <?php
 // Conexão
-require_once 'includes/header.php';
+require_once 'includes/headerindex.php';
 require_once 'php_action/db_connect.php';
 
 // Sessão
