@@ -8,21 +8,25 @@ include_once 'includes/header.php';
 		<h3 class="light"> Novo Cliente </h3>
 		<form action="php_action/create.php" method="POST">
 			<div class="input-field col s12">
-				<input type="text" name="nome" id="nome">
+			<i class="material-icons prefix">account_circle</i>
+				<input type="text" name="nome" id="nome" value="xiru">
 				<label for="nome">Nome</label>
 			</div>
 
 			<div class="input-field col s12">
+			<i class="material-icons prefix">child_care</i>
 				<input type="text" name="sobrenome" id="sobrenome">
 				<label for="sobrenome">Sobrenome</label>
 			</div>
 
 			<div class="input-field col s12">
+			<i class="material-icons prefix">email</i>
 				<input type="text" name="email" id="email">
 				<label for="email">Email</label>
 			</div>
 
 			<div class="input-field col s12">
+			<i class="material-icons prefix">insert_emoticon</i>
 				<input type="text" name="idade" id="idade">
 				<label for="idade">Idade</label>
 			</div>

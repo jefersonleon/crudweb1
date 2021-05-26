@@ -3,9 +3,10 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db_name = "crud";
+$db_name = "bdcrud";
 
 $connect = mysqli_connect($servername, $username, $password, $db_name);
+
 mysqli_set_charset($connect, "utf8");
 
 if(mysqli_connect_error()):

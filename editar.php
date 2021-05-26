@@ -7,8 +7,8 @@ include_once 'includes/header.php';
 if(isset($_GET['id'])):
 	$id = mysqli_escape_string($connect, $_GET['id']);
 
-	$sql = "SELECT * FROM clientes WHERE id = '$id'";
-	$resultado = mysqli_query($connect, $sql);
+	$sql = "SELECT * FROM tbclientes WHERE id = '$id'";
+	$resultado = mysqli_query($connect, $sql);//executou o script e conectou
 	$dados = mysqli_fetch_array($resultado);
 endif;
 ?>
