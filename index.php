@@ -29,18 +29,20 @@ if(isset($_POST['btn-entrar'])):
 
 		if(mysqli_num_rows($resultado) > 0):
 		//$senha = md5($senha);       
-		$sql = "SELECT * FROM tbusuario WHERE login = '$login' AND senha = '$senha'";
+		$sql = "SELECT * FROM tbusuario WHERE login = '$login' ";
 
 
 
 		$resultado = mysqli_query($connect, $sql);
 
-			if(mysqli_num_rows($resultado) == 1):
+			if(mysqli_num_rows($resultado) == 1 ):
 				$dados = mysqli_fetch_array($resultado);
-				mysqli_close($connect);
-				$_SESSION['logado'] = true;
-				$_SESSION['id_usuario'] = $dados['id'];
-				header('Location: menu.php');
+				if(password_verify($senha,$dados['senha'])):
+					mysqli_close($connect);
+					$_SESSION['logado'] = true;
+					$_SESSION['id_usuario'] = $dados['id'];
+					header('Location: menu.php');
+				endif;	
 			else:
 				$erros[] = "<li> Usuário e senha não conferem </li>";
 			endif;
